@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+@import url(../sanitize.css);
+
+@import url(../index-root-style.css);
+
+@import url(cl-427-style.css) only screen and (max-width: 427px);
+
+@import url(cl-428-833-style.css) only screen and (min-width: 428px) and
+  (max-width: 833px);
+
+@import url(cl-834-1279-style.css) only screen and (min-width: 834px) and
+  (max-width: 1279px);
+
+@import url(cl-1280-1699-style.css) only screen and (min-width: 1280px) and
+  (max-width: 1599px);
+
+@import url(cl-1700-style.css) only screen and (min-width: 1600px);
+
+@import url(../index-nav-style.css);
+
+/* Styling allgemeiner elemente */
+
+/* area map */
+
+area {
+  cursor: url(../../img/profile/rednose_01.png), auto;
+}
+
+/* Position up button */
+
+.topbutton {
+  position: relative;
+}
+
+.topbutton a {
+  position: fixed;
+}
+
+/* Zuweisung Schriften und allgemeine Attribute */
+
+#homelink {
+  background-color: var(--c-light);
+}
+
+h2,
+.maillink1 {
+  font-family: sans-serif;
+  font-weight: var(--wb);
+  margin-top: 0px;
+  text-decoration: none;
+}
+
+h3 {
+  display: flex;
+  align-items: flex-end;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: var(--wb);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+figcaption,
+p,
+input,
+label {
+  font-family: sans-serif;
+  font-weight: var(--wl);
+  margin-top: 0px;
+}
+
+details {
+  font-family: sans-serif;
+  font-weight: var(--wl);
+  color: var(--c-l-dark);
+}
+
+details {
+  padding: 0px 10px;
+}
+
+.timeline {
+  border-left: 2px solid var(--c-dark);
+  border-top: 2px solid var(--c-dark);
+  height: 100%;
+}
+
+
+
+.intro01 h2 {
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
+.underline-cl-01 {
+  width: 100%;
+  height: 11px;
+  border-bottom: 2px solid var(--c-dark);
+}
+
+/* figure und figcaption */
+
+figure {
+  font-family: sans-serif;
+  font-weight: var(--wl);
+  color: var(--c-l-dark);
+  margin: 0px;
+}
+
+/* List elements */
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding-left: 16px;
+}
+
+li::before {
+  content: "#";
+  padding-right: 8px;
+}
+
+/*footer */
+
+footer {
+  background-color: var(--c-l-light1);
+  grid-column: 1/4;
+  grid-row: 4/5;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-rows: auto auto;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.footer-mail {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: auto;
+}
+
+.footer-mail div {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-bottom: 40px;
+}
+
+.footer-copy {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.footer-copy a {
+  text-decoration: none;
+}
+
+.footer-text {
+  margin-top: 10px;
+}
+
+.sociallink02 i {
+  padding-right: 10px;
+}
+
+/* Hover */
+
+.introduction i:hover,
+.contentlist01 i:hover,
+nav i:hover,
+footer i:hover,
+.maillink1:hover {
+  color: var(--c-dark);
+}
+
+.nav2 i:hover {
+  color: var(--c-main);
+}
+
+picture:hover {
+  animation: imghover 0.5s linear forwards;
+}
+
+p a:hover {
+  animation: growline 0.3s linear forwards;
+}

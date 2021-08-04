@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+@import url(sanitize.css);
+
+@import url(index-root-style.css);
+
+@import url(home/index-427-style.css) only screen and (max-width: 427px);
+
+@import url(home/index-428-833-style.css) only screen and (min-width: 428px) and
+  (max-width: 833px);
+
+@import url(home/index-834-1279-style.css) only screen and (min-width: 834px)
+  and (max-width: 1279px);
+
+@import url(home/index-1280-1699-style.css) only screen and (min-width: 1280px)
+  and (max-width: 1699px);
+
+@import url(home/index-1700px-style.css) only screen and (min-width: 1600px);
+
+@import url(index-nav-style.css);
+
+/* Styling allgemeiner elemente */
+
+/* Beschreibende Tags */
+strong {
+  font-weight: 600;
+}
+
+kbd {
+  color: var(--c-main);
+}
+
+/* Font verteilung, allgemeine werte */
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.me01 {
+  font-family: sans-serif;
+  color: var(--c-dark);
+  font-weight: var(--wb);
+}
+
+
+h1 {
+  font-family: sans-serif;
+  font-weight: var(--wb);
+}
+
+h4 {
+  font-family: sans-serif;
+  font-weight: var(--wb);
+  margin: 0px;
+  padding-left: 10px;
+}
+
+.sociallinkmobil a {
+  font-family: sans-serif;
+  text-decoration: none;
+  color: var(--c-dark);
+}
+
+.iconon,
+.iconoff {
+  font-family: sans-serif;
+  color: var(--c-dark);
+  text-decoration: none;
+}
+
+.button01 a {
+  margin-top: 10px;
+  font-family: sans-serif;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-fav {
+  border: 2px solid var(--c-main);
+}
+
+.button-default {
+  border: 2px solid var(--c-dark);
+}
+
+/*footer */
+
+
+
+
+/* Hover */
+nav i:hover {
+  color: var(--c-dark);
+}
+
+main i:hover {
+  color: var(--c-main);
+}
+
+.button01 a:hover {
+  box-shadow: 0px 2px 5px var(--c-l-dark);
+}

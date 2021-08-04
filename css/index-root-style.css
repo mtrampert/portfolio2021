@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+:root {
+  /*farben*/
+  --c-main: #000000;
+  --c-l-main: #0000001c;
+  --c-dark: rgb(0, 0, 0);
+  --c-l-dark: rgba(0, 0, 0, 0.3);
+  --c-light: #ffffff;
+  --c-l-light: rgba(255, 255, 255, 0.7);
+  --c-l-light1: rgb(233, 233, 233);
+
+  /*Schriftgrößen*/
+  /* m=Mobil, t=Tablet, d=Desktop, ds=Desktop small, f=Font, h=Heading* l=line */
+  --msfh1: 35px;
+  --mslh1: 40px;
+  --msfh2: 20px;
+  --msfh3: 13px;
+  --mslh3: 16px;
+  --msfh4: 16px;
+  --mslh4: 18px;
+  --msfp: 13px;
+  --mslp: 16px;
+
+  --mfh1: 35px;
+  --mlh1: 40px;
+  --mfh2: 20px;
+  --mfh3: 13px;
+  --mlh3: 16px;
+  --mfh4: 18px;
+  --mlh4: 20px;
+  --mfp: 13px;
+  --mlp: 16px;
+
+  --tfh1: 45px;
+  --tlh1: 50px;
+  --tfh2: 20px;
+  --tfh3: 14px;
+  --tlh3: 16px;
+  --tfh4: 18px;
+  --tlh4: 20px;
+  --tfp: 14px;
+  --tlp: 16px;
+
+  --dsfh1: 50px;
+  --dslh1: 60px;
+  --dsfh2: 25px;
+  --dsfh3: 16px;
+  --dslh3: 18px;
+  --dsfh4: 20px;
+  --dslh4: 25px;
+  --dsfp: 16px;
+  --dslp: 18px;
+
+  --dfh1: 70px;
+  --dlh1: 70px;
+  --dfh2: 25px;
+  --dfh3: 16px;
+  --dlh3: 18px;
+  --dfh4: 25px;
+  --dlh4: 30px;
+  --dfp: 16px;
+  --dlp: 18px;
+
+  --navdp: 27px;
+  --navdsp: 22px;
+  --navtp: 20px;
+  --navmp: 18px;
+  --navmsp: 18px;
+  /*Schriftgewicht*/
+  --wb: 600;
+  --wl: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.orange {
+  color: var(--c-main);
+}
+.black {
+  color: var(--c-dark);
+}
+
+::selection {
+  background-color: var(--c-l-dark);
+}
+
+/* keyframes */
+@keyframes growline {
+  0% {
+    text-decoration: underline 1px var(--c-main);
+  }
+
+  100% {
+    text-decoration: underline 3px var(--c-main);
+  }
+}
+
+@keyframes imghover {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.6;
+  }
+}
+
+/* left to right */
+@keyframes bg {
+  0% {
+    background-size: 0 3px, 3px 0, 0 3px, 3px 0;
+  }
+  10% {
+    background-size: 0 0, 0 0, 0 0, 100% 100%;
+  }
+  20% {
+    background-size: 0 0, 0 0, 0 0, 0 0;
+  }
+  100% {
+    background-size: 0 3px, 3px 0, 0 3px, 3px 0;
+  }
+}
+
+/* top to bottom */
+@keyframes bt {
+  0% {
+    background-size: 0 3px, 3px 0, 0 3px, 3px 0;
+  }
+  6% {
+    background-size: 0 0, 100% 10px, 0 0, 0 0;
+  }
+  30% {
+    background-size: 0 0, 100% 100%, 0 0, 0 0;
+  }
+  100% {
+    background-size: 0 3px, 3px 0, 0 3px, 3px 0;
+  }
+}
+
+@keyframes anim1 {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes anim2 {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

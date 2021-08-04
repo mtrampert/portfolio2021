@@ -1,0 +1,247 @@
+@charset "utf-8";
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-rows: auto auto auto;
+}
+
+/* Anfang Einstellung Burger-element*/
+nav {
+  height: 50px;
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+}
+
+.topnav a {
+  font-size: var(--navdp);
+  font-weight: var(--wl);
+}
+
+.topnav #myLinksMobil {
+  display: block;
+}
+
+/* Ende Einstellung Burger-element*/
+
+main {
+  margin-top: 150px;
+  margin-bottom: 100px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+}
+
+.introduction {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 5fr 1fr 3fr;
+  grid-template-rows: auto;
+}
+
+.intro01 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.intro01 p {
+  margin-top: 20px;
+}
+
+.intro02 {
+  margin-top: 65px;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.toolbox p:first-child,
+.methodsbox p:first-child {
+  margin-bottom: 10px;
+}
+
+.intro02 .box {
+  border: 1px solid var(--c-l-dark);
+  border-radius: 10px;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.contentlist01 {
+  display: grid;
+  grid-template-columns: 0.5fr 9.5fr;
+  grid-template-rows: 200px auto auto;
+  margin-bottom: 100px;
+}
+
+/* Grideinstellungen der Liste */
+
+.timeline01 {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px auto;
+}
+
+.timeline01 p {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.timeline {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  width: 100%;
+  height: 500px;
+}
+
+.projects01 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(4, auto);
+  position: relative;
+  left: -32px;
+}
+
+/* Grid-Einstellung eine Projekts */
+
+.p1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 50px auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  margin-bottom: 100px;
+}
+
+.p2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 50px auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  margin-bottom: 100px;
+}
+
+.p3 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: 50px auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  margin-bottom: 100px;
+}
+
+.p4 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  display: grid;
+  grid-template-columns: 50px auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  margin-bottom: 100px;
+}
+
+.p5 {
+  grid-column: 1/2;
+  grid-row: 5/6;
+  display: grid;
+  grid-template-columns: 50px auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  margin-bottom: 100px;
+}
+
+.p6 {
+  grid-column: 1/2;
+  grid-row: 6/7;
+  display: grid;
+  grid-template-columns: 50px auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  margin-bottom: 100px;
+}
+
+.timelist {
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+
+.projects01 .picture01 {
+  padding-right: 20px;
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 1/4;
+}
+
+.projects01 h2 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.projects01 h3 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.shortexpl {
+  padding-right: 10px;
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+.projects01 .detail01,
+.projects01 .detail03,
+.projects01 .detail05,
+.projects01 .detail07,
+.projects01 .detail09,
+.projects01 .detail11,
+.projects01 .detail13 {
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+
+.projects01 .detail02,
+.projects01 .detail04,
+.projects01 .detail06,
+.projects01 .detail08,
+.projects01 .detail10,
+.projects01 .detail12,
+.projects01 .detail14 {
+  grid-column: 5/6;
+  grid-row: 3/4;
+}
+
+
+
+/* Schriftgrößen */
+
+h2, .maillink, .maillink1, footer i {
+  font-size: var(--dfh2);
+}
+
+h3 {
+  font-size: var(--dfh3);
+}
+
+p,
+summary {
+  font-size: var(--dfp);
+}
+
+.shortexpl a {
+  font-size: var(--dfh2);
+}
+
+.topbutton a {
+  font-size: var(--dfh2);
+  bottom: 50px;
+  right: 40px;
+}

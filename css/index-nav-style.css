@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+.mobile-container {
+  background-color: transparent;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.topnav #myLinksMobil {
+  position: absolute;
+  right: 0px;
+  text-align: end;
+}
+
+#homelink {
+  text-decoration: underline 1px var(--c-main);
+}
+
+.topnav a {
+  color: var(--c-dark);
+  background-color: transparent;
+  padding: 5px 16px;
+  text-decoration: none;
+  font-family: sans-serif;
+  display: block;
+}
+
+#icon {
+  color: var(--c-main);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Hover */
+
+#myLinksMobil a:hover,
+#homelink:hover {
+  animation: growline 0.3s linear forwards;
+}
+
+.topnav a:hover {
+  text-decoration: underline var(--c-main);
+}
